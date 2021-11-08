@@ -1,0 +1,40 @@
+.header {
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+    z-index: 2;
+    padding: 0 1rem;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    max-width: 180px;
+}
+
+.header .logo img {
+    width: 100%;
+}
+
+.header .menu {
+    display: flex;
+    gap: 3rem;
+}
+
+.header .menu .item {
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.header .menu .item:hover {
+    color: var(--primary-color);
+}

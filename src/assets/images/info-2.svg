@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1131.3" height="483" viewBox="0 0 1131.3 483">
+  <defs>
+    <linearGradient id="linear-gradient" x1="2.162" y1="-0.848" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ddd"/>
+      <stop offset="1" stop-color="#6f6f6f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1.221" y1="-0.202" x2="0" y2="1.121" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#25b5b5"/>
+      <stop offset="1" stop-color="#135b5b" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="1" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c6c6c6"/>
+      <stop offset="0.555" stop-color="#929292" stop-opacity="0.251"/>
+      <stop offset="1" stop-color="#636363" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="1" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#25b5b5" stop-opacity="0.82"/>
+      <stop offset="0.5" stop-color="#1a7c7c" stop-opacity="0.239"/>
+      <stop offset="1" stop-color="#135b5b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Сгруппировать_239" data-name="Сгруппировать 239" transform="translate(-389 -4642)">
+    <text id="Control_Group" data-name="Control Group" transform="translate(443 4668)" fill="#2b2b2b" font-size="26" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">Control Group</tspan></text>
+    <text id="Injected_with_Mioyes" data-name="Injected with Mioyes" transform="translate(731 4668)" fill="#2b2b2b" font-size="26" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">Injected with Mioyes</tspan></text>
+    <text id="_125" data-name="125" transform="translate(389 4732)" fill="#2b2b2b" font-size="20" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">125</tspan></text>
+    <text id="_100" data-name="100" transform="translate(389 4801)" fill="#2b2b2b" font-size="20" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">100</tspan></text>
+    <text id="_75" data-name="75" transform="translate(389 4870)" fill="#2b2b2b" font-size="20" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">75</tspan></text>
+    <text id="_50" data-name="50" transform="translate(389 4940)" fill="#2b2b2b" font-size="20" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">50</tspan></text>
+    <text id="_25" data-name="25" transform="translate(389 5009)" fill="#2b2b2b" font-size="20" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">25</tspan></text>
+    <text id="_0" data-name="0" transform="translate(389 5078)" fill="#2b2b2b" font-size="20" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">0</tspan></text>
+    <path id="Контур_112" data-name="Контур 112" d="M-473,8610H589.7" transform="translate(930.6 -3888)" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+    <path id="Контур_113" data-name="Контур 113" d="M-473,8610H589.7" transform="translate(930.6 -3818)" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+    <path id="Контур_114" data-name="Контур 114" d="M-473,8610H589.7" transform="translate(930.6 -3748)" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+    <path id="Контур_115" data-name="Контур 115" d="M-473,8610H589.7" transform="translate(930.6 -3681.5)" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+    <path id="Контур_116" data-name="Контур 116" d="M-473,8610H589.7" transform="translate(930.6 -3609.5)" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+    <path id="Контур_117" data-name="Контур 117" d="M-473,8610H589.7" transform="translate(930.6 -3538)" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+    <text id="_120_days" data-name="120 days" transform="translate(528 5119)" fill="#2b2b2b" font-size="20" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">120 days</tspan></text>
+    <text id="_141_days" data-name="141 days" transform="translate(809 5119)" fill="#2b2b2b" font-size="20" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">141 days</tspan></text>
+    <text id="_162_days" data-name="162 days" transform="translate(1093 5119)" fill="#2b2b2b" font-size="20" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">162 days</tspan></text>
+    <text id="_184_days" data-name="184 days" transform="translate(1374 5119)" fill="#2b2b2b" font-size="20" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">184 days</tspan></text>
+    <rect id="Прямоугольник_92" data-name="Прямоугольник 92" width="33" height="33" transform="translate(389 4642)" fill="url(#linear-gradient)"/>
+    <rect id="Прямоугольник_93" data-name="Прямоугольник 93" width="33" height="33" transform="translate(677 4642)" fill="url(#linear-gradient-2)"/>
+    <text id="_38_93" data-name="38,93" transform="translate(480 4924)" fill="#2b2b2b" font-size="26" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">38,93</tspan></text>
+    <text id="_53_5" data-name="53,5" transform="translate(770 4885)" fill="#2b2b2b" font-size="26" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">53,5</tspan></text>
+    <text id="_71_83" data-name="71,83" transform="translate(1045 4828)" fill="#2b2b2b" font-size="26" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">71,83</tspan></text>
+    <text id="_86_8" data-name="86,8" transform="translate(1335 4764)" fill="#2b2b2b" font-size="26" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="0">86,8</tspan></text>
+    <text id="_46_93" data-name="46,93" transform="translate(586 4915)" fill="#2b2b2b" font-size="26" font-family="PTSans-Bold, PT Sans" font-weight="700"><tspan x="0" y="0">46,93</tspan></text>
+    <text id="_67_0" data-name="67,0" transform="translate(877 4865)" fill="#2b2b2b" font-size="26" font-family="PTSans-Bold, PT Sans" font-weight="700"><tspan x="0" y="0">67,0</tspan></text>
+    <text id="_87_13" data-name="87,13" transform="translate(1153 4804)" fill="#2b2b2b" font-size="26" font-family="PTSans-Bold, PT Sans" font-weight="700"><tspan x="0" y="0">87,13</tspan></text>
+    <text id="_109_9" data-name="109,9" transform="translate(1433 4741)" fill="#2b2b2b" font-size="26" font-family="PTSans-Bold, PT Sans" font-weight="700"><tspan x="0" y="0">109,9</tspan></text>
+    <rect id="Прямоугольник_94" data-name="Прямоугольник 94" width="107" height="127" transform="translate(458 4945)" opacity="0.67" fill="url(#linear-gradient-3)"/>
+    <rect id="Прямоугольник_95" data-name="Прямоугольник 95" width="108" height="137" transform="translate(565 4935)" opacity="0.67" fill="url(#linear-gradient-4)"/>
+    <rect id="Прямоугольник_96" data-name="Прямоугольник 96" width="107" height="169" transform="translate(740 4903)" opacity="0.67" fill="url(#linear-gradient-3)"/>
+    <rect id="Прямоугольник_97" data-name="Прямоугольник 97" width="108" height="189" transform="translate(847 4883)" opacity="0.67" fill="url(#linear-gradient-4)"/>
+    <rect id="Прямоугольник_98" data-name="Прямоугольник 98" width="107" height="222" transform="translate(1023 4850)" opacity="0.67" fill="url(#linear-gradient-3)"/>
+    <rect id="Прямоугольник_99" data-name="Прямоугольник 99" width="108" height="248" transform="translate(1130 4824)" opacity="0.67" fill="url(#linear-gradient-4)"/>
+    <rect id="Прямоугольник_100" data-name="Прямоугольник 100" width="107" height="287" transform="translate(1305 4785)" opacity="0.67" fill="url(#linear-gradient-3)"/>
+    <rect id="Прямоугольник_101" data-name="Прямоугольник 101" width="108" height="310" transform="translate(1412 4762)" opacity="0.67" fill="url(#linear-gradient-4)"/>
+  </g>
+</svg>

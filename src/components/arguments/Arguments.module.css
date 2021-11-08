@@ -1,0 +1,23 @@
+.arguments {
+    display: flex;
+    max-width: var(--max-width);
+    gap: 2rem;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+}
+
+.card {
+    background: var(--component-background);
+    padding: 3rem;
+    border-radius: var(--border-radius-base);
+    width: 50%;
+    box-shadow: 3px 3px 35px rgba(37, 181, 181, 15%);
+    margin-top: -4rem;
+    z-index: 2;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}

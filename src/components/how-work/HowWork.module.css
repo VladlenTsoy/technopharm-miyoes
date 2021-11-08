@@ -1,0 +1,48 @@
+.howWork {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem 3rem;
+}
+
+.howWork .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    padding: 2rem 0;
+}
+
+.howWork .container .icons {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.howWork .container .icons img {
+    width: 100%;
+}
+
+.howWork .container .text p {
+    padding-right: 3rem;
+    color: #707070;
+    font-size: 17px;
+}
+
+.howWork .second {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    padding-top: 2rem;
+}
+
+.howWork .second .image {
+    padding: 0 5.5rem 0 3.5rem;
+}
+
+.howWork .second .image img {
+    width: 100%;
+}
+
+.howWork .second .content {
+    padding-right: 6rem;
+    font-size: 17px;
+    color: #707070;
+}

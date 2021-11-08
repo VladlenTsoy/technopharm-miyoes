@@ -1,0 +1,34 @@
+.banner {
+    position: relative;
+    height: calc(100vh - 250px);
+    background: var(--component-background);
+    background-image: url("../../assets/images/banner.png");
+    background-repeat: no-repeat;
+    background-position: 300px -130px;
+    background-size: 92.5%;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner .container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.banner .container .content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.banner .container .content h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.banner .container .content div {
+    font-size: 30px;
+}
