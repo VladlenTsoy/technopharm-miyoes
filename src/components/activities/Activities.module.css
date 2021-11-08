@@ -30,7 +30,7 @@
 }
 
 .container .wrapper ul li {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@
     background: var(--layout-background);
     border-radius: var(--border-radius-base);
     padding: 2rem;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .blocks .block .card h3 {

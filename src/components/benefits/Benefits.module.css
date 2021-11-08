@@ -50,7 +50,7 @@
 }
 
 .container .content .item .desc {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--secondary-color);
 }
 
@@ -76,7 +76,7 @@
 }
 
 .container .card .wrapper ul li {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;

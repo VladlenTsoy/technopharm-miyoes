@@ -1,6 +1,6 @@
 .banner {
     position: relative;
-    height: calc(100vh - 250px);
+    height: calc(100vh - 100px);
     overflow: hidden;
     width: 100%;
     z-index: 1;
@@ -22,7 +22,9 @@
 }
 .banner .bg img {
     width: 100%;
-    transform: translate(20%, 0%) scale(1.2);
+    object-fit: cover;
+    height: 190%;
+    transform: translate(20%, -5%) scale(1.1);
 }
 
 .banner .container {

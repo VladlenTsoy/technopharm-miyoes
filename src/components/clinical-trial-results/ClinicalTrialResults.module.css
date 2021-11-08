@@ -24,7 +24,7 @@
 .container .wrapper b {
     display: block;
     font-family: "Google Sans", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 2rem;
 }
 
@@ -61,7 +61,7 @@
 .card .blocks {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 20px;
+    font-size: 18px;
     gap: 5rem;
 }
 
