@@ -6,9 +6,11 @@
     --font-size-base: 16px;
     --primary-color: #25B5B5;
     --text-color: #2B2B2B;
+    --secondary-color: #707070;
     --layout-background: #F8F8F8;
     --component-background: #FFFFFF;
-    --border-radius-base: 20px
+    --border-radius-base: 20px;
+    --border-color: #C6C6C6
 }
 
 * {

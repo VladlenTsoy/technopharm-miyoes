@@ -1,14 +1,28 @@
 .banner {
     position: relative;
     height: calc(100vh - 250px);
-    background: var(--component-background);
-    background-image: url("../../assets/images/banner.png");
-    background-repeat: no-repeat;
-    background-position: 300px -130px;
-    background-size: 92.5%;
     overflow: hidden;
     width: 100%;
     z-index: 1;
+    background: var(--component-background);
+}
+
+.banner .bg {
+    /*background-image: url("../../assets/images/banner.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: 300px -130px;*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    /*background-size: 92.5%;*/
+}
+.banner .bg img {
+    width: 100%;
+    transform: translate(20%, 0%) scale(1.2);
 }
 
 .banner .container {

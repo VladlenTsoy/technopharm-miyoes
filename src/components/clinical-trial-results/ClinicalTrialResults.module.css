@@ -1,0 +1,71 @@
+.container {
+    padding: 3rem 1rem;
+    background: var(--component-background);
+}
+
+.container .wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.container .wrapper .content {
+    width: 80%;
+    margin: 0 auto 3rem;
+}
+
+.container .wrapper .content:first-child {
+    margin-bottom: 6rem;
+}
+
+.container .wrapper h1 {
+    margin-bottom: 3rem;
+}
+
+.container .wrapper b {
+    display: block;
+    font-family: "Google Sans", sans-serif;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.container .wrapper .wrapperImages {
+    position: relative;
+}
+
+.container .wrapper .wrapperImages img {
+    width: 100%;
+}
+
+.container .wrapper .wrapperImages .imageContent {
+    position: absolute;
+    left: 6%;
+    width: 94%;
+    top: 15.5%;
+    right: 0;
+}
+
+.card {
+    background: var(--layout-background);
+    padding: 3rem 6rem;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    border-radius: var(--border-radius-base);
+}
+
+.card h1 {
+    font-family: "Google Sans", sans-serif;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+.card .blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+    gap: 5rem;
+}
+
+.card .blocks .block {
+    padding-left: 2rem;
+    border-left: 3px solid var(--primary-color);
+}

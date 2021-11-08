@@ -22,7 +22,7 @@
 
 .howWork .container .text p {
     padding-right: 3rem;
-    color: #707070;
+    color: var(--secondary-color);
     font-size: 17px;
 }
 
@@ -44,5 +44,5 @@
 .howWork .second .content {
     padding-right: 6rem;
     font-size: 17px;
-    color: #707070;
+    color: var(--secondary-color);
 }

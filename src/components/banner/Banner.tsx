@@ -1,10 +1,13 @@
 import React from "react"
-import BannerImage from "../../assets/images/banner.svg"
+import BannerImage from "../../assets/images/banner.png"
 import styles from "./Banner.module.css"
 
 const Banner = () => {
     return (
-        <div className={styles.banner} style={{backgroundImage: BannerImage}}>
+        <div className={styles.banner}>
+            <div className={styles.bg}>
+                <img src={BannerImage} alt=""/>
+            </div>
             <div className={styles.container}>
                <div className={styles.content}>
                    <h1>What is Miyoes</h1>

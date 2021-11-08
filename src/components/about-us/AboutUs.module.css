@@ -1,0 +1,84 @@
+.container {
+    background: var(--component-background);
+    padding: 3rem 1rem;
+}
+
+.container .wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.container .wrapper h1 {
+    font-family: "Google Sans", sans-serif;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.container .wrapper .subTitle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 30px;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.container .wrapper .logo {
+    height: 50px;
+}
+
+.container .wrapper .blocks {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.container .wrapper .blocks .block {
+    position: relative;
+    padding-top: 1rem;
+}
+
+.container .wrapper .blocks .block:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background: var(--component-background);
+    border: 5px solid var(--primary-color);
+    transform: translateY(calc(-50% - 1rem));
+    z-index: 2;
+}
+
+.container .wrapper .blocks .block:not(:last-child):after {
+    content: "";
+    border-bottom: 2px solid var(--primary-color);
+    position: absolute;
+    left: 0;
+    right: -4rem;
+    top: 0;
+}
+
+.container .wrapper .blocks .block h3 {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 1rem;
+    font-family: "Google Sans", sans-serif;
+}
+
+.container .wrapper .blocks .block p {
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+
+.container .wrapper .card {
+    background: var(--layout-background);
+    border-radius: var(--border-radius-base);
+    padding: 3rem 6rem;
+}
+
+.container .wrapper .card img {
+    width: 100%;
+    margin-top: 1rem;
+}
