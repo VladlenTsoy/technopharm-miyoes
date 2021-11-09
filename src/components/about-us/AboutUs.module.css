@@ -1,6 +1,6 @@
 .container {
     background: var(--component-background);
-    padding: 3rem 1rem;
+    padding: var(--container-padding) var(--body-padding);
 }
 
 .container .wrapper {
@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 30px;
+    font-size: var(--font-size-large);
     justify-content: center;
     margin-bottom: 3rem;
 }
@@ -30,7 +30,7 @@
 .container .wrapper .blocks {
     display: flex;
     gap: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: var(--container-padding);
 }
 
 .container .wrapper .blocks .block {
@@ -61,14 +61,12 @@
 
 .container .wrapper .blocks .block h3 {
     color: var(--primary-color);
-    font-size: 18px;
     margin-bottom: 1rem;
     font-family: "Google Sans", sans-serif;
 }
 
 .container .wrapper .blocks .block p {
     color: var(--secondary-color);
-    font-size: 18px;
 }
 
 
@@ -81,4 +79,73 @@
 .container .wrapper .card img {
     width: 100%;
     margin-top: 1rem;
+}
+
+.items {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container .wrapper .blocks {
+        display: block;
+        gap: 1rem;
+    }
+
+    .container .wrapper .blocks .block {
+        padding-top: .5rem;
+    }
+
+    .container .wrapper .blocks .block:before {
+        content: none;
+    }
+
+    .container .wrapper .blocks .block:not(:last-child):after {
+        content: none;
+    }
+
+    .container .wrapper .blocks .block h3 {
+        margin-top: 0;
+    }
+
+    .container .wrapper .card {
+        padding: 3rem 1rem;
+    }
+
+    .container .wrapper .card img {
+        display: none;
+    }
+
+    .items {
+        display: block;
+    }
+
+    .items .item {
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        gap: 1rem;
+        align-items: center;
+        position: relative;
+    }
+
+    .items .item:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .items .item:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: var(--primary-color);
+        border-radius: 50%;
+    }
+
+    .items .item:not(:last-child):after {
+        content: "";
+        position: absolute;
+        height: 36px;
+        border-left: 1px solid var(--primary-color);
+        transform: translateX(10px);
+        top: 75%;
+    }
 }

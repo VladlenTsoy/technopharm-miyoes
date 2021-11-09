@@ -1,5 +1,5 @@
 import React from "react"
-import BannerImage from "../../assets/images/banner.png"
+import BannerImage from "../../assets/images/box_1.png"
 import styles from "./Banner.module.css"
 
 const Banner = () => {

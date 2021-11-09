@@ -23,7 +23,6 @@
 .howWork .container .text p {
     padding-right: 3rem;
     color: var(--secondary-color);
-    font-size: 17px;
 }
 
 .howWork .second {
@@ -43,6 +42,27 @@
 
 .howWork .second .content {
     padding-right: 6rem;
-    font-size: 17px;
     color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .howWork .container {
+        grid-template-columns: 1fr;
+    }
+
+    .howWork .container .text p {
+        padding: 0;
+    }
+
+    .howWork .second {
+        grid-template-columns: 1fr;
+    }
+
+    .howWork .second .content {
+        padding: 0;
+    }
+
+    .howWork .second .image {
+        padding: 0 2.5rem 0 2.5rem;
+    }
 }

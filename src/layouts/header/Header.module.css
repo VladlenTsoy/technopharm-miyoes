@@ -3,7 +3,7 @@
     top: 2rem;
     width: 100%;
     z-index: 2;
-    padding: 0 1rem;
+    padding: 0 var(--body-padding);
 }
 
 .container {
@@ -11,7 +11,6 @@
     margin: 0 auto;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -25,7 +24,7 @@
 
 .header .menu {
     display: flex;
-    gap: 3rem;
+    gap: var(--container-padding);
 }
 
 .header .menu .item {
@@ -33,8 +32,88 @@
     font-weight: bold;
     transition: color .3s ease-in-out;
     cursor: pointer;
+    font-size: var(--font-size-sm);
 }
 
 .header .menu .item:hover {
     color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .header .menu {
+        display: none;
+    }
+
+    .mobileMenu {
+        border: 2px solid var(--border-color);
+        border-radius: 50%;
+        height: 45px;
+        width: 45px;
+        cursor: pointer;
+        position: absolute;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        z-index: 22;
+        top: 2rem;
+        right: 1rem;
+    }
+
+    .mobileMenu span {
+        display: flex;
+        height: 4px;
+        background: var(--primary-color);
+        width: 65%;
+        border-radius: 20px;
+    }
+
+    .drawer {
+        position: fixed;
+        width: 250px;
+        background: var(--component-background);
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 99;
+        box-shadow: 3px 3px 35px rgb(37 181 181 / 15%);
+        padding: 1rem;
+    }
+
+    .drawer .close {
+        position: absolute;
+        right: 1.5rem;
+        top: 2.5rem;
+        width: 32px;
+        height: 32px;
+        opacity: 0.3;
+    }
+
+    .drawer .close:after {
+        transform: rotate(-45deg);
+    }
+
+    .drawer .close:before {
+        transform: rotate(45deg);
+    }
+
+    .drawer .close:before, .drawer .close:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: #333;
+    }
+
+    .drawer .menu {
+        padding-top: 8rem;
+    }
+
+    .drawer .menu .item {
+        padding: 1rem;
+        font-size: var(--font-size-sub-title);
+    }
 }

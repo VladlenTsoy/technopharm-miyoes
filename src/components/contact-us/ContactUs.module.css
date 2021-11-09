@@ -3,6 +3,7 @@
     padding: 3rem 1rem;
     margin: 0 auto;
 }
+
 .wrapper h1 {
     margin-bottom: 3rem;
 }
@@ -33,10 +34,15 @@
 
 .content .item p {
     margin: 0 0 0 calc(1rem + 30px);
-    font-size: 18px;
     color: var(--secondary-color);
 }
 
 .email {
     font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: auto;
+    }
 }

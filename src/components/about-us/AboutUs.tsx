@@ -13,7 +13,6 @@ const AboutUs = () => {
                     <img className={styles.logo} src={Logo2Image} alt="" />
                     works
                 </div>
-
                 <div className={styles.blocks}>
                     <div className={styles.block}>
                         <h3>First injection</h3>
@@ -43,6 +42,24 @@ const AboutUs = () => {
                 <div className={styles.card}>
                     <h1>About<br />Technopharm Investment</h1>
                     <img src={AboutImage} alt="" />
+                    <div className={styles.items}>
+                        <div className={styles.item}>
+                            Company was established
+                            in 2018 in Scotland
+                        </div>
+                        <div className={styles.item}>
+                            The sales office was opened
+                            in Moscow in 2018
+                        </div>
+                        <div className={styles.item}>
+                            The representative office was
+                            opened in Tashkent in 2019
+                        </div>
+                        <div className={styles.item}>
+                            The penetration to South East
+                            Asian market in 2021
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

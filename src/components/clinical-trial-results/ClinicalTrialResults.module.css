@@ -24,7 +24,6 @@
 .container .wrapper b {
     display: block;
     font-family: "Google Sans", sans-serif;
-    font-size: 18px;
     margin-bottom: 2rem;
 }
 
@@ -61,11 +60,30 @@
 .card .blocks {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 18px;
     gap: 5rem;
 }
 
 .card .blocks .block {
     padding-left: 2rem;
     border-left: 3px solid var(--primary-color);
+}
+
+@media (max-width: 768px) {
+
+    .container .wrapper .content {
+        width: 100%;
+    }
+
+    .card {
+        padding: 3rem 2rem;
+    }
+
+    .card .blocks {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .card .blocks .block {
+        padding-left: 1rem;
+    }
 }
