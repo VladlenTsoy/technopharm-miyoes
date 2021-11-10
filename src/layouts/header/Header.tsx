@@ -15,6 +15,11 @@ const Header = () => {
         setVisible(true)
     }
 
+    const onScrollHandler = (id: string) => {
+        const element = document.getElementById(id)
+        element && element.scrollIntoView({block: "start", behavior: "smooth"})
+    }
+
     return (
         <>
             <div className={styles.mobileMenu} onClick={onClickHandler}>
@@ -31,10 +36,10 @@ const Header = () => {
                         <img src={LogoImage} alt="technopharm" />
                     </div>
                     <div className={styles.menu}>
-                        <div className={styles.item}>Home</div>
-                        <div className={styles.item}>About us</div>
-                        <div className={styles.item}>Products</div>
-                        <div className={styles.item}>Contacts</div>
+                        <div className={styles.item} onClick={() => onScrollHandler("home")}>Home</div>
+                        <div className={styles.item} onClick={() => onScrollHandler("about-us")}>About us</div>
+                        <div className={styles.item} onClick={() => onScrollHandler("products")}>Products</div>
+                        <div className={styles.item} onClick={() => onScrollHandler("contacts")}>Contacts</div>
                     </div>
                 </div>
             </div>
@@ -47,15 +52,21 @@ interface DrawerProps {
 }
 
 const Drawer: React.FC<DrawerProps> = ({onCloseHandler}) => {
+
+    const onScrollHandler = (id: string) => {
+        const element = document.getElementById(id)
+        element && element.scrollIntoView({block: "start", behavior: "smooth"})
+    }
+
     return ReactDOM.createPortal(
         <motion.div className={styles.drawer} initial={{x: 250}} exit={{x: 250}} animate={{x: 0}}>
             <>
                 <div className={styles.close} onClick={onCloseHandler} />
                 <div className={styles.menu}>
-                    <div className={styles.item}>Home</div>
-                    <div className={styles.item}>About us</div>
-                    <div className={styles.item}>Products</div>
-                    <div className={styles.item}>Contacts</div>
+                    <div className={styles.item} onClick={() => onScrollHandler("home")}>Home</div>
+                    <div className={styles.item} onClick={() => onScrollHandler("about-us")}>About us</div>
+                    <div className={styles.item} onClick={() => onScrollHandler("products")}>Products</div>
+                    <div className={styles.item} onClick={() => onScrollHandler("contacts")}>Contacts</div>
                 </div>
             </>
         </motion.div>, document.body

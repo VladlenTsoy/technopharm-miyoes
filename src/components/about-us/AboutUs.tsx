@@ -39,7 +39,7 @@ const AboutUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className={styles.card}>
+                <div className={styles.card} id="about-us">
                     <h1>About<br />Technopharm Investment</h1>
                     <img src={AboutImage} alt="" />
                     <div className={styles.items}>

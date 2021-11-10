@@ -6,12 +6,12 @@ import UzImage from "../../assets/images/uz.svg"
 
 const ContactUs = () => {
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} id="contacts">
             <h1>Contact us</h1>
             <div className={styles.content}>
                 <div className={styles.item}>
                     <div className={styles.titleBlock}>
-                        <img src={UkImage} className={styles.flag} alt=""/>
+                        <img src={UkImage} className={styles.flag} alt="" />
                         <div className={styles.title}>UK office</div>
                     </div>
                     <p>64a Cumberland Street, Edinburgh, Scotland, EH3 6RE</p>
@@ -19,7 +19,7 @@ const ContactUs = () => {
                 </div>
                 <div className={styles.item}>
                     <div className={styles.titleBlock}>
-                        <img src={RuImage} className={styles.flag} alt=""/>
+                        <img src={RuImage} className={styles.flag} alt="" />
                         <div className={styles.title}>Representative office in Russian Federation</div>
                     </div>
                     <p>125367, Gabrichevskii st., 5, office 209, Moscow, Russia</p>
@@ -27,7 +27,7 @@ const ContactUs = () => {
                 </div>
                 <div className={styles.item}>
                     <div className={styles.titleBlock}>
-                        <img src={UzImage} className={styles.flag} alt=""/>
+                        <img src={UzImage} className={styles.flag} alt="" />
                         <div className={styles.title}>Representative office in Uzbekistan</div>
                     </div>
                     <p>100070, Bogidil st., 2A, Tashkent, Uzbekistan</p>

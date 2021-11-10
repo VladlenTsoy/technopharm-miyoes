@@ -6,7 +6,7 @@ import image3 from "../../assets/images/how-work-03.svg"
 
 const HowWork = () => {
     return (
-        <div className={styles.howWork}>
+        <div className={styles.howWork} id="products">
             <h1>How does<br />Mioyes work?</h1>
             <div className={styles.container}>
                 <div className={styles.icons}>
