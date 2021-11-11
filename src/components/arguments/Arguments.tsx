@@ -1,10 +1,31 @@
-import React from "react"
+import React, {useEffect} from "react"
 import styles from "./Arguments.module.css"
+import {useInView} from "react-intersection-observer"
+import {useAnimation, motion} from "framer-motion"
 
 const Arguments = () => {
+    const [ref, inView] = useInView()
+    const controls = useAnimation()
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible")
+        }
+    }, [controls, inView])
+
     return (
         <div className={styles.arguments}>
-            <div className={styles.card}>
+            <motion.div
+                className={styles.card}
+                ref={ref}
+                animate={controls}
+                initial="hidden"
+                transition={{duration: 1}}
+                variants={{
+                    visible: {opacity: 1, x: 0},
+                    hidden: {opacity: 0, x: -100}
+                }}
+            >
                 <h2>8 out of 10</h2>
                 <p>
                     Livestrock breeders believe that the use of hormonal
@@ -12,8 +33,18 @@ const Arguments = () => {
                     stimulating the growth of muscle mass in animals is
                     impossible
                 </p>
-            </div>
-            <div className={styles.card}>
+            </motion.div>
+            <motion.div
+                className={styles.card}
+                ref={ref}
+                animate={controls}
+                initial="hidden"
+                transition={{duration: 1}}
+                variants={{
+                    visible: {opacity: 1, x: 0},
+                    hidden: {opacity: 0, x: 100}
+                }}
+            >
                 <h2>10 out of 10</h2>
                 <p>
                     Breeders believe that for the growth of animal
@@ -21,7 +52,7 @@ const Arguments = () => {
                     of feed, which significantly increases the cost
                     of keeping animals
                 </p>
-            </div>
+            </motion.div>
         </div>
     )
 }

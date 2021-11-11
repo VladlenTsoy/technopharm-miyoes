@@ -3,13 +3,14 @@ import styles from "./ClinicalTrialResults.module.css"
 import Bg1Image from "../../assets/images/01/bg.svg"
 import Content1Image from "../../assets/images/01/content-1.svg"
 import Content2Image from "../../assets/images/02/content-1.svg"
+import TitleColorAnimation from "../title/TitleColorAnimation"
 
 const ClinicalTrialResults = () => {
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
                 <div className={styles.content}>
-                    <h1>Clinical trial results</h1>
+                    <TitleColorAnimation>Clinical trial results</TitleColorAnimation>
                     <b>Increase in the weight gain of pigs during clinical trials, in kg</b>
                     <div className={styles.wrapperImages}>
                         <img src={Bg1Image} alt="" />
