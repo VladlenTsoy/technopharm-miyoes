@@ -29,6 +29,7 @@
 
 .container .wrapper .wrapperImages {
     position: relative;
+    overflow: hidden;
 }
 
 .container .wrapper .wrapperImages img {
