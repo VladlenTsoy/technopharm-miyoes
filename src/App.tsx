@@ -11,7 +11,7 @@ import ContactUs from "./components/contact-us/ContactUs"
 
 const App = () => {
     return (
-        <>
+        <div style={{width: "100%", overflowX: "hidden"}}>
             <Header />
             <Banner />
             <Arguments />
@@ -21,7 +21,7 @@ const App = () => {
             <AboutUs />
             <Activities />
             <ContactUs />
-        </>
+        </div>
     )
 }
 

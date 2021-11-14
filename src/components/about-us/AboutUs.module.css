@@ -98,12 +98,12 @@
         padding-top: .5rem;
     }
 
-    .container .wrapper .blocks .block .after {
-        content: none;
+    .container .wrapper .blocks .block .before {
+        display: none;
     }
 
     .container .wrapper .blocks .block:not(:last-child) .after {
-        content: none;
+        display: none;
     }
 
     .container .wrapper .blocks .block h3 {
@@ -135,7 +135,7 @@
         margin-bottom: 1rem;
     }
 
-    .items .item .before {
+    .items .item:before {
         content: "";
         width: 20px;
         height: 20px;
@@ -143,7 +143,7 @@
         border-radius: 50%;
     }
 
-    .items .item:not(:last-child) .after {
+    .items .item:not(:last-child):after {
         content: "";
         position: absolute;
         height: 36px;
