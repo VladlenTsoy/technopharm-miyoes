@@ -1,26 +1,19 @@
 import React from "react"
-import Header from "./layouts/header/Header"
-import Banner from "./components/banner/Banner"
-import Arguments from "./components/arguments/Arguments"
-import HowWork from "./components/how-work/HowWork"
-import Benefits from "./components/benefits/Benefits"
-import ClinicalTrialResults from "./components/clinical-trial-results/ClinicalTrialResults"
-import AboutUs from "./components/about-us/AboutUs"
-import Activities from "./components/activities/Activities"
-import ContactUs from "./components/contact-us/ContactUs"
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import Home from "./pages/home"
+import Miosta from "./pages/miosta"
+import Mioyes from "./pages/mioyes"
 
 const App = () => {
     return (
         <div style={{width: "100%", overflowX: "hidden"}}>
-            <Header />
-            <Banner />
-            <Arguments />
-            <HowWork />
-            <Benefits />
-            <ClinicalTrialResults />
-            <AboutUs />
-            <Activities />
-            <ContactUs />
+            <Router>
+                <Switch>
+                    <Route path="/" exact children={<Home />} />
+                    <Route path="/mioyes" exact children={<Mioyes />} />
+                    <Route path="/miosta" children={<Miosta />} />
+                </Switch>
+            </Router>
         </div>
     )
 }

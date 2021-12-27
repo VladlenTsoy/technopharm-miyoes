@@ -1,9 +1,9 @@
 import React, {useEffect} from "react"
 import styles from "./ClinicalTrialResults.module.css"
-import Bg1Image from "../../assets/images/01/bg.svg"
-import Content1Image from "../../assets/images/01/content-1.svg"
-import Content2Image from "../../assets/images/02/content-1.svg"
-import TitleColorAnimation from "../title/TitleColorAnimation"
+import Bg1Image from "../../../assets/images/01/bg.svg"
+import Content1Image from "../../../assets/images/01/content-1.svg"
+import Content2Image from "../../../assets/images/02/content-1.svg"
+import TitleColorAnimation from "../../title/TitleColorAnimation"
 import {motion, useAnimation} from "framer-motion"
 import {useInView} from "react-intersection-observer"
 

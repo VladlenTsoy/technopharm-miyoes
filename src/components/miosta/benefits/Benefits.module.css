@@ -12,12 +12,12 @@
     display: flex;
     align-items: center;
     gap: 4rem;
-    max-width: 65%;
+    max-width: 70%;
     margin: 0 auto 3rem;
 }
 
 .container .header .image {
-    width: 40%;
+    width: 25%;
 }
 
 .container .header .image img {
@@ -30,10 +30,10 @@
 
 .container .content {
     display: grid;
-    grid-template-columns: 55% 45%;
-    grid-template-rows: 1fr 1fr;
+    /*grid-template-columns: 55% 45%;*/
+    /*grid-template-rows: 1fr 1fr;*/
     align-items: flex-end;
-    max-width: 70%;
+    max-width: 90%;
     margin: 0 auto 3rem;
 }
 
@@ -46,7 +46,8 @@
 }
 
 .container .content .item img {
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
 
 .container .content .item .desc {
@@ -59,11 +60,12 @@
     padding: 3rem 1rem;
     max-width: var(--max-width);
     margin: 0 auto;
+    display: flex;
 }
 
 .container .card .wrapper {
-    width: calc(80% + 2rem);
-    margin: 0 auto;
+    /*width: calc(80% + 2rem);*/
+    /*margin: 0 auto;*/
 }
 
 .container .card .wrapper h1 {
@@ -85,7 +87,7 @@
     display: inline-block;
     height: .75rem;
     width: .75rem;
-    background-image: url('../../assets/images/icon-9.svg');
+    background-image: url('../../../assets/images/miosta/icon-9.svg');
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 1em;

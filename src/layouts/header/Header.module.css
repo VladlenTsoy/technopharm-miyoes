@@ -25,6 +25,7 @@
 .header .menu {
     display: flex;
     gap: var(--container-padding);
+    position: relative;
 }
 
 .header .menu .item {
@@ -33,9 +34,36 @@
     transition: color .3s ease-in-out;
     cursor: pointer;
     font-size: var(--font-size-sm);
+    color: var(--text-color);
 }
 
 .header .menu .item:hover {
+    color: var(--primary-color);
+}
+
+.header .menu .dropdownWrapper {
+    position: relative;
+}
+
+.header .menu .dropdownWrapper .dropdown {
+    position: absolute;
+    background: #FFFFFF;
+    padding: .25rem 2rem;
+    top: 1.75rem;
+}
+
+.header .menu .dropdownWrapper .dropdown .dropdownItem {
+    display: block;
+    padding: .5rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    color: var(--text-color);
+}
+
+.header .menu .dropdownWrapper .dropdown .dropdownItem:hover {
     color: var(--primary-color);
 }
 
@@ -113,7 +141,17 @@
     }
 
     .drawer .menu .item {
+        color: var(--text-color);
         padding: 1rem;
         font-size: var(--font-size-sub-title);
+        display: block;
     }
+
+    .drawer .menu .subItem {
+        color: var(--text-color);
+        display: block;
+        font-size: var(--font-size-large);
+        padding: .5rem 2rem .5rem;
+    }
+
 }

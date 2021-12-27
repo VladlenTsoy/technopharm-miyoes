@@ -1,9 +1,9 @@
 import React, {useEffect} from "react"
-import BannerImage from "../../assets/images/box_1.png"
+import BannerImage from "../../../assets/images/box_1.png"
 import styles from "./Banner.module.css"
 import {motion, useAnimation} from "framer-motion"
 import {useInView} from "react-intersection-observer"
-import TitleColorAnimation from "../title/TitleColorAnimation"
+import TitleColorAnimation from "../../title/TitleColorAnimation"
 
 const Banner = () => {
     const [ref, inView] = useInView()

@@ -1,13 +1,13 @@
 import React, {useEffect} from "react"
 import styles from "./Benefits.module.css"
-import LogoImage from "../../assets/images/logo-2.svg"
-import Icon3Image from "../../assets/images/icon-3.svg"
-import Icon4Image from "../../assets/images/icon-4.svg"
-import Icon5Image from "../../assets/images/icon-5.svg"
-import Icon6Image from "../../assets/images/icon-6.svg"
+import LogoImage from "../../../assets/images/miosta/logo-2.svg"
+import Icon3Image from "../../../assets/images/miosta/icon-3.svg"
+import Icon4Image from "../../../assets/images/miosta/icon-5.svg"
+import Icon5Image from "../../../assets/images/miosta/icon-4.svg"
+import Icon6Image from "../../../assets/images/miosta/icon-6.svg"
 import {useInView} from "react-intersection-observer"
 import {useAnimation, motion} from "framer-motion"
-import TitleColorAnimation from "../title/TitleColorAnimation"
+import TitleColorAnimation from "../../title/TitleColorAnimation"
 
 const container = {
     visible: {
@@ -53,7 +53,10 @@ const Benefits = () => {
                     <div className={styles.image}>
                         <img src={LogoImage} alt="logo" />
                     </div>
-                    <div className={styles.title}>Perfect metabolite to stimulate musclegrowth in animals</div>
+                    <div className={styles.title}>
+                        A drug for the treatment of alimentary dystrophy
+                        and protein-energy malnutrition (PEM).
+                    </div>
                 </div>
                 <motion.div
                     className={styles.content}
@@ -67,7 +70,8 @@ const Benefits = () => {
                         initial="hidden"
                     >
                         <motion.img variants={item} src={Icon3Image} alt="" />
-                        <motion.div variants={item} className={styles.desc}>Additional profit to the farmer up to 15%
+                        <motion.div variants={item} className={styles.desc}>
+                            Normalization of protein metabolism
                         </motion.div>
                     </motion.div>
                     <motion.div
@@ -78,8 +82,8 @@ const Benefits = () => {
                     >
                         <motion.img variants={item} transition={{delay: 1.5}}
                                     src={Icon5Image} alt="" />
-                        <motion.div variants={item} transition={{delay: 2}} className={styles.desc}>Safe final processed
-                            food
+                        <motion.div variants={item} transition={{delay: 2}} className={styles.desc}>
+                            Positive changes in the clinical status of calves (improved appetite, coat (smooth and shiny), motor activity);
                         </motion.div>
                     </motion.div>
                     <motion.div
@@ -89,8 +93,8 @@ const Benefits = () => {
                         initial="hidden"
                     >
                         <motion.img variants={item} transition={{delay: 2.5}} src={Icon4Image} alt="" />
-                        <motion.div variants={item} transition={{delay: 3}} className={styles.desc}>Cost-saving for
-                            livestock keeping
+                        <motion.div variants={item} transition={{delay: 3}} className={styles.desc}>
+                            Increasing the daily weight gain of animals;
                         </motion.div>
                     </motion.div>
                     <motion.div
@@ -100,14 +104,14 @@ const Benefits = () => {
                         initial="hidden"
                     >
                         <motion.img variants={item} transition={{delay: 3.5}} src={Icon6Image} alt="" />
-                        <motion.div variants={item} transition={{delay: 4}} className={styles.desc}>Enhanced meat
-                            quality
+                        <motion.div variants={item} transition={{delay: 4}} className={styles.desc}>
+                            Additional benefits for the farmer up to 15%.
                         </motion.div>
                     </motion.div>
                 </motion.div>
                 <div className={styles.card}>
                     <div className={styles.wrapper} ref={secondRef}>
-                        <TitleColorAnimation>Biological effects of injecting Mioyes</TitleColorAnimation>
+                        <TitleColorAnimation>Application of Miosta allows:</TitleColorAnimation>
                         <motion.ul
                             variants={container}
                             initial="hidden"
@@ -116,17 +120,22 @@ const Benefits = () => {
                             <motion.li
                                 variants={secondItem}
                             >
-                                Increase in muscle mass
+                                increase the muscle mass of the animal up to 12-15%;
                             </motion.li>
                             <motion.li
                                 variants={secondItem}
                             >
-                                Improving the taste of meat by increasing the protein quality indicator
+                                increase the daily weight gain of calves up to 20%;
                             </motion.li>
                             <motion.li
                                 variants={secondItem}
                             >
-                                Improving the physical condition of the animal
+                                to increase the protein content in the body of animals up to 12%;
+                            </motion.li>
+                            <motion.li
+                                variants={secondItem}
+                            >
+                                to increase the physical activity of animals.
                             </motion.li>
                         </motion.ul>
                     </div>
