@@ -45,7 +45,7 @@ const Banner = () => {
                             hidden: {opacity: 0, y: 100}
                         }}
                     >
-                        And why this drug is neseccary<br />in animal husbandry?
+                        And why this drug is necessary<br />in animal husbandry?
                     </motion.div>
                 </div>
             </div>
