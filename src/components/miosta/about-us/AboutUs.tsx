@@ -32,7 +32,7 @@ const AboutUs = () => {
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
-                <h1>When the efficiency of Miosta will be seen?</h1>
+                <h1>When the efficiency of will be seen?</h1>
                 <div className={styles.subTitle}>results of clinical trials, carried out on calves</div>
                 <motion.div
                     ref={ref}

@@ -33,7 +33,7 @@ const Banner = () => {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <TitleColorAnimation>
-                        What is Miyoes
+                        What is Miyoes Н
                     </TitleColorAnimation>
                     <motion.div
                         ref={ref}

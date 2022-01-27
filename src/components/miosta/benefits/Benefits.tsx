@@ -111,7 +111,7 @@ const Benefits = () => {
                 </motion.div>
                 <div className={styles.card}>
                     <div className={styles.wrapper} ref={secondRef}>
-                        <TitleColorAnimation>Application of Miosta allows:</TitleColorAnimation>
+                        <TitleColorAnimation>Application of Miosta Н allows:</TitleColorAnimation>
                         <motion.ul
                             variants={container}
                             initial="hidden"

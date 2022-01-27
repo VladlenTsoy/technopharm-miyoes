@@ -76,7 +76,7 @@ const ClinicalTrialResults = () => {
                 </div>
             </div>
             <div className={styles.card} ref={secondRef}>
-                <h1>Clinical trials of Mioyes showed</h1>
+                <h1>Clinical trials of Mioyes H showed</h1>
                 <div className={styles.blocks}>
                     <motion.div
                         animate={controls}

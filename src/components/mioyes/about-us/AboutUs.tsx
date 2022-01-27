@@ -1,7 +1,7 @@
 import React, {useEffect} from "react"
 import styles from "./AboutUs.module.css"
 import Logo2Image from "../../../assets/images/logo-2.svg"
-import AboutImage from "../../../assets/images/about.svg"
+// import AboutImage from "../../../assets/images/about.svg"
 import {useAnimation, motion} from "framer-motion"
 import {useInView} from "react-intersection-observer"
 
@@ -36,7 +36,7 @@ const AboutUs = () => {
         }
     }, [controls, inView])
 
-    const [secondRef, secondInView] = useInView()
+    const [, secondInView] = useInView()
     const secondControls = useAnimation()
 
     useEffect(() => {
@@ -49,7 +49,7 @@ const AboutUs = () => {
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
-                <h1>When the efficiency will be seen?</h1>
+                <h1>When the efficiency of will be seen?</h1>
                 <div className={styles.subTitle}>
                     How
                     <img className={styles.logo} src={Logo2Image} alt="" />
@@ -96,45 +96,45 @@ const AboutUs = () => {
                         </p>
                     </motion.div>
                 </motion.div>
-                <div className={styles.card} id="about-us" ref={secondRef}>
-                    <motion.h1
-                        animate={controls}
-                        initial="hidden"
-                        transition={{duration: 1}}
-                        variants={{
-                            visible: {opacity: 1, y: 0},
-                            hidden: {opacity: 0, y: -100}
-                        }}
-                    >About<br />Technopharm Investment
-                    </motion.h1>
-                    <motion.img
-                        animate={controls}
-                        initial="hidden"
-                        transition={{duration: 1}}
-                        variants={{
-                            visible: {opacity: 1, y: 0},
-                            hidden: {opacity: 0, y: 100}
-                        }}
-                        src={AboutImage} alt="" />
-                    <div className={styles.items}>
-                        <div className={styles.item}>
-                            Company was established
-                            in 2018 in Scotland
-                        </div>
-                        <div className={styles.item}>
-                            The sales office was opened
-                            in Moscow in 2018
-                        </div>
-                        <div className={styles.item}>
-                            The representative office was
-                            opened in Tashkent in 2019
-                        </div>
-                        <div className={styles.item}>
-                            The penetration to South East
-                            Asian market in 2021
-                        </div>
-                    </div>
-                </div>
+                {/*<div className={styles.card} id="about-us" ref={secondRef}>*/}
+                {/*    <motion.h1*/}
+                {/*        animate={controls}*/}
+                {/*        initial="hidden"*/}
+                {/*        transition={{duration: 1}}*/}
+                {/*        variants={{*/}
+                {/*            visible: {opacity: 1, y: 0},*/}
+                {/*            hidden: {opacity: 0, y: -100}*/}
+                {/*        }}*/}
+                {/*    >About<br />Technopharm Investment*/}
+                {/*    </motion.h1>*/}
+                {/*    <motion.img*/}
+                {/*        animate={controls}*/}
+                {/*        initial="hidden"*/}
+                {/*        transition={{duration: 1}}*/}
+                {/*        variants={{*/}
+                {/*            visible: {opacity: 1, y: 0},*/}
+                {/*            hidden: {opacity: 0, y: 100}*/}
+                {/*        }}*/}
+                {/*        src={AboutImage} alt="" />*/}
+                {/*    <div className={styles.items}>*/}
+                {/*        <div className={styles.item}>*/}
+                {/*            Company was established*/}
+                {/*            in 2018 in Scotland*/}
+                {/*        </div>*/}
+                {/*        <div className={styles.item}>*/}
+                {/*            The sales office was opened*/}
+                {/*            in Moscow in 2018*/}
+                {/*        </div>*/}
+                {/*        <div className={styles.item}>*/}
+                {/*            The representative office was*/}
+                {/*            opened in Tashkent in 2019*/}
+                {/*        </div>*/}
+                {/*        <div className={styles.item}>*/}
+                {/*            The penetration to South East*/}
+                {/*            Asian market in 2021*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
             </div>
         </div>
     )

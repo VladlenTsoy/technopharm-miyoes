@@ -18,7 +18,7 @@ const HowWork = () => {
 
     return (
         <div className={styles.howWork} id="products">
-            <TitleColorAnimation>How does<br />Mioyes work?</TitleColorAnimation>
+            <TitleColorAnimation>How does<br />Mioyes H work?</TitleColorAnimation>
             <div className={styles.container} ref={ref}>
                 <div className={styles.icons}>
                     <motion.img src={image1} alt=""

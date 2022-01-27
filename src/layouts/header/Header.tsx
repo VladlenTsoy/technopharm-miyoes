@@ -54,8 +54,8 @@ const Header = () => {
                                         display: "none"
                                     }}
                                 className={styles.dropdown}>
-                                <Link to="/mioyes" className={styles.dropdownItem}>Mioyes</Link>
-                                <Link to="/miosta" className={styles.dropdownItem}>Miosta</Link>
+                                <Link to="/mioyes" className={styles.dropdownItem}>Mioyes Н</Link>
+                                <Link to="/miosta" className={styles.dropdownItem}>Miosta Н</Link>
                             </motion.div>
                         </div>
 
@@ -87,8 +87,8 @@ const Drawer: React.FC<DrawerProps> = ({onCloseHandler}) => {
                     <Link className={styles.item} to="/">Home</Link>
                     <div className={styles.item} onClick={() => onScrollHandler("about-us")}>About us</div>
                     <div className={styles.item}>Products</div>
-                    <Link to="mioyes" className={styles.subItem} style={{paddingTop: 0}}>Mioyes</Link>
-                    <Link to="miosta" className={styles.subItem}>Miosta</Link>
+                    <Link to="mioyes" className={styles.subItem} style={{paddingTop: 0}}>Mioyes H</Link>
+                    <Link to="miosta" className={styles.subItem}>Miosta Н</Link>
                     <div className={styles.item} onClick={() => onScrollHandler("contacts")}>Contacts</div>
                 </div>
             </>

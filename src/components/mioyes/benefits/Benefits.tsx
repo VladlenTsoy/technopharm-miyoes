@@ -107,7 +107,7 @@ const Benefits = () => {
                 </motion.div>
                 <div className={styles.card}>
                     <div className={styles.wrapper} ref={secondRef}>
-                        <TitleColorAnimation>Biological effects of injecting Mioyes</TitleColorAnimation>
+                        <TitleColorAnimation>Biological effects of injecting Mioyes H</TitleColorAnimation>
                         <motion.ul
                             variants={container}
                             initial="hidden"

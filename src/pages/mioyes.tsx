@@ -6,6 +6,7 @@ import HowWork from "../components/mioyes/how-work/HowWork"
 import Benefits from "../components/mioyes/benefits/Benefits"
 import ClinicalTrialResults from "../components/mioyes/clinical-trial-results/ClinicalTrialResults"
 import ContactUs from "../components/contact-us/ContactUs"
+import AboutUs from "../components/mioyes/about-us/AboutUs"
 
 const Mioyes = () => {
     return (
@@ -16,7 +17,7 @@ const Mioyes = () => {
             <HowWork />
             <Benefits />
             <ClinicalTrialResults />
-            {/*<AboutUs />*/}
+            <AboutUs />
             {/*<Activities />*/}
             <ContactUs />
         </>
