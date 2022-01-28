@@ -64,9 +64,9 @@ const AboutUs = () => {
                 >
                     <motion.div variants={item} className={styles.block}>
                         <motion.span className={styles.before} />
-                        <h3>First injection</h3>
+                        <h3>After the injection</h3>
                         <p>
-                            21 days after the first injection,
+                            21 days after the injection,
                             the weight of the experimental group
                             of pigs inclinical trials increased by an average of 11.3% compared to the control group.
                         </p>
@@ -76,9 +76,9 @@ const AboutUs = () => {
                     </motion.div>
                     <motion.div variants={item} className={styles.block}>
                         <motion.span className={styles.before} />
-                        <h3>Second injection</h3>
+                        <h3>The second weighing</h3>
                         <p>
-                            21 days after the second injection,
+                            42 days after the injection,
                             the weight of the experimental group
                             of pigs inclinical trials increased by an average of 5% compared to the control group.
                         </p>
@@ -90,7 +90,7 @@ const AboutUs = () => {
                         <motion.span className={styles.before} />
                         <h3>Final weight</h3>
                         <p>
-                            By the time of the final weighing
+                            By the time of the weighing
                             (64 days after the first injection),
                             the weight of theexperimental group of pigs increased by 12% compared to the control group.
                         </p>

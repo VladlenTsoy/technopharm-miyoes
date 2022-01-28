@@ -30,7 +30,7 @@ const HowWork = () => {
                 />
             </div>
             <div className={styles.content}>
-                <TitleColorAnimation>Miosta Н</TitleColorAnimation>
+                <TitleColorAnimation>Miosta Н <span className="r">®</span></TitleColorAnimation>
                 <motion.div
                     className={styles.text}
                     animate={secondControls}

@@ -43,9 +43,9 @@ const AboutUs = () => {
                 >
                     <motion.div variants={item} className={styles.block}>
                         <motion.span className={styles.before} />
-                        <h3>First injection</h3>
+                        <h3>After the injection</h3>
                         <p>
-                            2 months after the first injection,
+                            2 months after the injection,
                             the weight of the experimental group of calves
                             in clinical trials increased by an average
                             of 12.8% compared to the control group.
@@ -63,9 +63,9 @@ const AboutUs = () => {
                     </motion.div>
                     <motion.div variants={item} className={styles.block}>
                         <motion.span className={styles.before} />
-                        <h3>Second injection</h3>
+                        <h3>The second weighing</h3>
                         <p>
-                            4 months after the first injection,
+                            4 months after the injection,
                             the weight of the experimental group of calves
                             in clinical trials increased by an average
                             of 22.8% compared to the control group.
@@ -86,7 +86,7 @@ const AboutUs = () => {
                         <h3>Final weight</h3>
                         <p>
                             By the time of the final weighing
-                            (6 months after the first injection),
+                            (6 months after the injection),
                             the weight of the experimental group
                             of calves increased by 29.6% compared
                             to the control group.

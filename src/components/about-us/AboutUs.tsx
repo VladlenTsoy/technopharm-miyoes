@@ -49,7 +49,7 @@ const AboutUs = () => {
                         </div>
                         <div className={styles.item}>
                             The representative office was
-                            opened in Tashkent in 2019
+                            opened in Tashkent in 2018
                         </div>
                         <div className={styles.item}>
                             The penetration to South East
