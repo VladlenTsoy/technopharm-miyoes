@@ -92,7 +92,7 @@ const AboutUs = () => {
                         <p>
                             By the time of the final weighing
                             (64 days after the first injection),
-                            the weight of theexperimental group of pigs increased by 12% compared to the control group.
+                            the weight of the experimental group of pigs increased by 12% compared to the control group.
                         </p>
                     </motion.div>
                 </motion.div>
