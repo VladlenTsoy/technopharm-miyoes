@@ -84,3 +84,7 @@ h2 {
     position: absolute;
     top: 5px;;
 }
+
+.textLogo {
+    position: relative;
+}

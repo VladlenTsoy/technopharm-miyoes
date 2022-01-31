@@ -90,7 +90,7 @@ const AboutUs = () => {
                         <motion.span className={styles.before} />
                         <h3>Final weight</h3>
                         <p>
-                            By the time of the weighing
+                            By the time of the final weighing
                             (64 days after the first injection),
                             the weight of theexperimental group of pigs increased by 12% compared to the control group.
                         </p>

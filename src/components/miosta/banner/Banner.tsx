@@ -33,7 +33,7 @@ const Banner = () => {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <TitleColorAnimation>
-                        Miosta Н <span className="r">®</span>
+                        <span className="textLogo">Miosta Н <span className="r">®</span></span>
                     </TitleColorAnimation>
                     <motion.div
                         ref={ref}
