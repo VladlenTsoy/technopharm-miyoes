@@ -10,7 +10,7 @@
 
 .container .wrapper h1 {
     font-family: "Google Sans", sans-serif;
-    color: var(--text-color);
+    color: var(--primary-color);
     text-align: center;
 }
 
@@ -35,10 +35,16 @@
 .container .wrapper .blocks .block {
     position: relative;
     padding-top: 1rem;
+    text-align: center;
 }
 
 .container .wrapper .blocks .block:not(:last-child) {
-    padding-right: 4rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.container .wrapper .blocks .block p {
+    text-align: left;
 }
 
 .container .wrapper .blocks .block .before {
@@ -55,9 +61,8 @@
 
 .container .wrapper .blocks .block:not(:last-child) .after {
     content: "";
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
     position: absolute;
-    left: 0;
     top: 0;
     width: 100%;
 }
@@ -74,14 +79,9 @@
 
 
 .container .wrapper .card {
+    background: var(--layout-background);
     border-radius: var(--border-radius-base);
     padding: 3rem 6rem;
-
-    background: white;
-    box-shadow: 3px 3px 35px rgb(37 181 181 / 15%);
-    margin-top: -6rem;
-    z-index: 2222;
-    position: relative;
 }
 
 .container .wrapper .card img {
@@ -100,15 +100,16 @@
     }
 
     .container .wrapper .blocks .block {
-        padding-top: .5rem;
+        padding: .5rem .5rem 0!important;
     }
 
     .container .wrapper .blocks .block .before {
         display: none;
     }
 
-    .container .wrapper .blocks .block:not(:last-child) .after {
+    .container .wrapper .blocks .block .after {
         display: none;
+        opacity: 0;
     }
 
     .container .wrapper .blocks .block h3 {

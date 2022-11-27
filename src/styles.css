@@ -1,5 +1,6 @@
 @import url("assets/font/stylesheet.css");
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "~pure-react-carousel/dist/react-carousel.es.css";
 
 :root {
     --max-width: 1200px;
@@ -17,6 +18,10 @@
     --border-color: #C6C6C6;
     --container-padding: 3rem;
     --body-padding: 1rem;
+}
+
+.miosta {
+    --primary-color: #1D3564;
 }
 
 * {
@@ -45,6 +50,7 @@ h1 {
     font-family: "Google Sans", sans-serif;
     margin-top: 0;
     margin-bottom: 1.5rem;
+    position: relative;
 }
 
 h2 {
@@ -70,4 +76,15 @@ h2 {
     h2 {
         margin-bottom: 1rem;
     }
+}
+
+.r {
+    font-size: 35%;
+    line-height: 1;
+    position: absolute;
+    top: 5px;;
+}
+
+.textLogo {
+    position: relative;
 }
