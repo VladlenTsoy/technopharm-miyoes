@@ -24,7 +24,7 @@
 }
 
 .container .wrapper .logo {
-    height: 50px;
+    height: 35px;
 }
 
 .container .wrapper .blocks {
@@ -74,14 +74,9 @@
 
 
 .container .wrapper .card {
+    background: var(--layout-background);
     border-radius: var(--border-radius-base);
     padding: 3rem 6rem;
-
-    background: white;
-    box-shadow: 3px 3px 35px rgb(37 181 181 / 15%);
-    margin-top: -6rem;
-    z-index: 2222;
-    position: relative;
 }
 
 .container .wrapper .card img {

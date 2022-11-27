@@ -2,9 +2,11 @@ import React, {useState} from "react"
 import LogoImage from "../../assets/images/logo.svg"
 import styles from "./Header.module.css"
 import ReactDOM from "react-dom"
+import {Link} from "react-router-dom"
 import {AnimatePresence, motion} from "framer-motion"
 
 const Header = () => {
+    const [dropdown, setDropdown] = useState(false)
     const [visible, setVisible] = useState(false)
 
     const onCloseHandler = () => {
@@ -36,10 +38,29 @@ const Header = () => {
                         <img src={LogoImage} alt="technopharm" />
                     </div>
                     <div className={styles.menu}>
-                        <div className={styles.item} onClick={() => onScrollHandler("home")}>Home</div>
+                        <Link to="/" className={styles.item}>Home</Link>
                         <div className={styles.item} onClick={() => onScrollHandler("about-us")}>About us</div>
-                        <div className={styles.item} onClick={() => onScrollHandler("products")}>Products</div>
+                        <div className={styles.dropdownWrapper}
+                             onPointerEnter={() => setDropdown(true)}
+                             onPointerLeave={() => setDropdown(false)}
+                        >
+                            <div className={styles.item}>Products</div>
+                            <motion.div
+                                initial={{opacity: 0, y: 100, display: "none"}}
+                                animate={dropdown ?
+                                    {opacity: 1, y: 0, display: "block"} : {
+                                        opacity: 0,
+                                        y: 100,
+                                        display: "none"
+                                    }}
+                                className={styles.dropdown}>
+                                <Link to="/mioyes" className={styles.dropdownItem}>Mioyes Н</Link>
+                                <Link to="/miosta" className={styles.dropdownItem}>Miosta Н</Link>
+                            </motion.div>
+                        </div>
+
                         <div className={styles.item} onClick={() => onScrollHandler("contacts")}>Contacts</div>
+
                     </div>
                 </div>
             </div>
@@ -63,9 +84,11 @@ const Drawer: React.FC<DrawerProps> = ({onCloseHandler}) => {
             <>
                 <div className={styles.close} onClick={onCloseHandler} />
                 <div className={styles.menu}>
-                    <div className={styles.item} onClick={() => onScrollHandler("home")}>Home</div>
+                    <Link className={styles.item} to="/">Home</Link>
                     <div className={styles.item} onClick={() => onScrollHandler("about-us")}>About us</div>
-                    <div className={styles.item} onClick={() => onScrollHandler("products")}>Products</div>
+                    <div className={styles.item}>Products</div>
+                    <Link to="mioyes" className={styles.subItem} style={{paddingTop: 0}}>Mioyes H</Link>
+                    <Link to="miosta" className={styles.subItem}>Miosta Н</Link>
                     <div className={styles.item} onClick={() => onScrollHandler("contacts")}>Contacts</div>
                 </div>
             </>
