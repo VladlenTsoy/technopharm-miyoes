@@ -3,11 +3,14 @@ import styles from "./ContactUs.module.css"
 import UkImage from "../../assets/images/uk.svg"
 import RuImage from "../../assets/images/ru.svg"
 import UzImage from "../../assets/images/uz.svg"
+import {useTranslation} from "react-i18next"
 
 const ContactUs = () => {
+    const {t} = useTranslation()
+
     return (
         <div className={styles.wrapper} id="contacts">
-            <h1>Contact us</h1>
+            <h1>{t("contacts.title")}</h1>
             <div className={styles.content}>
                 <div className={styles.item}>
                     <div className={styles.titleBlock}>

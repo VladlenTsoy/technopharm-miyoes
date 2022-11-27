@@ -2,8 +2,10 @@ import React, {useEffect} from "react"
 import styles from "./Arguments.module.css"
 import {useInView} from "react-intersection-observer"
 import {useAnimation, motion} from "framer-motion"
+import {useTranslation} from "react-i18next"
 
 const Arguments = () => {
+    const {t} = useTranslation()
     const [ref, inView] = useInView()
     const controls = useAnimation()
 
@@ -27,20 +29,14 @@ const Arguments = () => {
                 }}
             >
                 <div className={styles.item}>
-                    <h2>
-                        Сhallenges faced <br/>
-                        by livestock <br/>
-                        breeders:
-                    </h2>
+                    <h2>{t("miosta.arguments.title")}</h2>
                 </div>
                 <div className={styles.item}>
                     <ul>
-                        <li>violation of absorption and assimilation
-                            of the protein component of feed by the animal's body,
-                        </li>
-                        <li>chronic digestive disorders of animals</li>
+                        <li>{t("miosta.arguments.items.first")}</li>
+                        <li>{t("miosta.arguments.items.second")}</li>
                     </ul>
-                    <b>leading to alimentary dystrophy of cattle.</b>
+                    <b>{t("miosta.arguments.items.three")}</b>
                 </div>
             </motion.div>
         </div>

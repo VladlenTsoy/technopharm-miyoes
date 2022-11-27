@@ -4,8 +4,10 @@ import image3 from "../../../assets/images/miosta/how-work-01.svg"
 import TitleColorAnimation from "../../title/TitleColorAnimation"
 import {useInView} from "react-intersection-observer"
 import {useAnimation, motion} from "framer-motion"
+import {useTranslation} from "react-i18next"
 
 const HowWork = () => {
+    const {t} = useTranslation()
     const [secondRef, secondInView] = useInView()
     const secondControls = useAnimation()
 
@@ -42,11 +44,7 @@ const HowWork = () => {
                     }}
                 >
                     <p>
-                        is a recombinant protein in which a fragment of an activin receptor (ActRIIb)
-                        is attached to a carrier protein. The introduction of this drug to animals causes
-                        the formation of auto-antibodies to the receptor in the body.
-                        Auto-antibodies, specifically binding to the activin receptor (ActRIIb), block it from
-                        interacting with myostatin, which leads to accelerated muscle growth.
+                        {t("miosta.how_work.desc")}
                     </p>
                 </motion.div>
             </div>
