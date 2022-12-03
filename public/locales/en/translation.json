@@ -57,5 +57,11 @@
     "how_work": {
       "desc": "The main component on Miosta Н  is a recombinant protein.\n The application of this product into animals causes the formulation of compounds that able to block the signal way of myostatine (the key negative regulator of muscle growth factor), and, respectively, enhances the  synthesis of protein and inhibits its decay."
     }
+  },
+  "mioyes": {
+    "banner": {
+      "title": "What is",
+      "desc": "And why this drug is necessary\n in animal husbandry?"
+    }
   }
 }
