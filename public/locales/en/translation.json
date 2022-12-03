@@ -107,6 +107,13 @@
           "desc": "By the time of the final weighing (6 months after the injection), the weight of the experimental group of calves increased by 29.6% compared to the control group."
         }
       }
+    },
+    "clinical": {
+      "title": "Trials results",
+      "desc": {
+        "first": "Increase in weight gain of calves in trials, kg",
+        "second": "Increase in daily weight gain of calves in clinical trials, kg"
+      }
     }
   },
   "mioyes": {

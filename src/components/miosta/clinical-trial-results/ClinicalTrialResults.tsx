@@ -6,8 +6,10 @@ import Content2Image from "../../../assets/images/miosta/02/content-1.svg"
 import TitleColorAnimation from "../../title/TitleColorAnimation"
 import {motion, useAnimation} from "framer-motion"
 import {useInView} from "react-intersection-observer"
+import {useTranslation} from "react-i18next"
 
 const ClinicalTrialResults = () => {
+    const {t} = useTranslation()
     const [ref, inView] = useInView()
     const controls = useAnimation()
 
@@ -24,8 +26,8 @@ const ClinicalTrialResults = () => {
         >
             <div className={styles.wrapper}>
                 <div className={styles.content}>
-                    <TitleColorAnimation>Clinical trial results</TitleColorAnimation>
-                    <b>Increase in weight gain of calves in clinical trials, kg</b>
+                    <TitleColorAnimation>{t("miosta.clinical.title")}</TitleColorAnimation>
+                    <b>{t("miosta.clinical.desc.first")}</b>
                     <div className={styles.wrapperImages}>
                         <motion.img
                             animate={controls}
@@ -51,7 +53,7 @@ const ClinicalTrialResults = () => {
                     </div>
                 </div>
                 <div className={styles.content}>
-                    <b>Increase in daily weight gain of calves in clinical trials, kg</b>
+                    <b>{t("miosta.clinical.desc.second")}</b>
                     <div className={styles.wrapperImages}>
                         <motion.img
                             animate={controls}
