@@ -1,4 +1,10 @@
 {
+  "header": {
+    "home": "Главная",
+    "about_us": "О нас",
+    "products": "Продукция",
+    "contacts": "Контакты"
+  },
   "home": {
     "about": "О Technopharm Investment",
     "about_item_first": "Компания была создана в 2018 году в Шотландии, Великобритания",

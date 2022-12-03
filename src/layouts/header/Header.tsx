@@ -4,8 +4,10 @@ import styles from "./Header.module.css"
 import ReactDOM from "react-dom"
 import {Link} from "react-router-dom"
 import {AnimatePresence, motion} from "framer-motion"
+import {useTranslation} from "react-i18next"
 
 const Header = () => {
+    const {t} = useTranslation()
     const [dropdown, setDropdown] = useState(false)
     const [visible, setVisible] = useState(false)
 
@@ -38,13 +40,15 @@ const Header = () => {
                         <img src={LogoImage} alt="technopharm" />
                     </div>
                     <div className={styles.menu}>
-                        <Link to="/" className={styles.item}>Home</Link>
-                        <div className={styles.item} onClick={() => onScrollHandler("about-us")}>About us</div>
+                        <Link to="/" className={styles.item}>{t("header.home")}</Link>
+                        <div className={styles.item} onClick={() => onScrollHandler("about-us")}>
+                            {t("header.about_us")}
+                        </div>
                         <div className={styles.dropdownWrapper}
                              onPointerEnter={() => setDropdown(true)}
                              onPointerLeave={() => setDropdown(false)}
                         >
-                            <div className={styles.item}>Products</div>
+                            <div className={styles.item}>{t("header.products")}</div>
                             <motion.div
                                 initial={{opacity: 0, y: 100, display: "none"}}
                                 animate={dropdown ?
@@ -54,13 +58,14 @@ const Header = () => {
                                         display: "none"
                                     }}
                                 className={styles.dropdown}>
-                                <Link to="/mioyes" className={styles.dropdownItem}>Mioyes Н</Link>
+                                {/*<Link to="/mioyes" className={styles.dropdownItem}>Mioyes Н</Link>*/}
                                 <Link to="/miosta" className={styles.dropdownItem}>Miosta Н</Link>
                             </motion.div>
                         </div>
 
-                        <div className={styles.item} onClick={() => onScrollHandler("contacts")}>Contacts</div>
-
+                        <div className={styles.item} onClick={() => onScrollHandler("contacts")}>
+                            {t("header.contacts")}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,6 +78,7 @@ interface DrawerProps {
 }
 
 const Drawer: React.FC<DrawerProps> = ({onCloseHandler}) => {
+    const {t} = useTranslation()
 
     const onScrollHandler = (id: string) => {
         const element = document.getElementById(id)
@@ -84,12 +90,14 @@ const Drawer: React.FC<DrawerProps> = ({onCloseHandler}) => {
             <>
                 <div className={styles.close} onClick={onCloseHandler} />
                 <div className={styles.menu}>
-                    <Link className={styles.item} to="/">Home</Link>
-                    <div className={styles.item} onClick={() => onScrollHandler("about-us")}>About us</div>
-                    <div className={styles.item}>Products</div>
-                    <Link to="mioyes" className={styles.subItem} style={{paddingTop: 0}}>Mioyes H</Link>
+                    <Link className={styles.item} to="/">{t("header.home")}</Link>
+                    <div className={styles.item}
+                         onClick={() => onScrollHandler("about-us")}>{t("header.about_us")}</div>
+                    <div className={styles.item}>{t("header.products")}</div>
+                    {/*<Link to="mioyes" className={styles.subItem} style={{paddingTop: 0}}>Mioyes H</Link>*/}
                     <Link to="miosta" className={styles.subItem}>Miosta Н</Link>
-                    <div className={styles.item} onClick={() => onScrollHandler("contacts")}>Contacts</div>
+                    <div className={styles.item}
+                         onClick={() => onScrollHandler("contacts")}>{t("header.contacts")}</div>
                 </div>
             </>
         </motion.div>, document.body

@@ -1,4 +1,10 @@
 {
+  "header": {
+    "home": "Home",
+    "about_us": "About us",
+    "products": "Products",
+    "contacts": "Contacts"
+  },
   "home": {
     "about": "About\nTechnopharm Investment",
     "about_item_first": "Company was established\n in 2018 in Scotland",
