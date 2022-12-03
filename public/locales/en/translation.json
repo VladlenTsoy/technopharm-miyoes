@@ -56,6 +56,51 @@
     },
     "how_work": {
       "desc": "The main component on Miosta Н  is a recombinant protein.\n The application of this product into animals causes the formulation of compounds that able to block the signal way of myostatine (the key negative regulator of muscle growth factor), and, respectively, enhances the  synthesis of protein and inhibits its decay."
+    },
+    "benefits": {
+      "desc": "A drug for the treatment of alimentary dystrophy\n and protein-energy malnutrition (PEM).",
+      "items": {
+        "first": "Normalization of protein metabolism;",
+        "second": "Positive changes in the clinical status of calves (improved appetite, coat (smooth and shiny), motor activity);",
+        "three": "Increasing the daily weight gain of animals and daily milking capacity;",
+        "fourth": "Additional benefits for the farmer up to 15%."
+      }
+    },
+    "application": {
+      "title": {
+        "first": "Application of",
+        "second": "allows"
+      },
+      "items": {
+        "1": "increase the muscle mass of the animal;",
+        "2": "increase the milking capacity and milk fatness;",
+        "3": "increasing the assimilation of the protein component of feed by the animal body;",
+        "4": "improve the appetite of animals;",
+        "5": "improving the general physical condition of the animal;",
+        "6": "acceleration of hoof regeneration;",
+        "7": "shortening the service period of cows;",
+        "8": "improving fertility in cows;",
+        "9": "increasing in the tissues of the genital glands;",
+        "10": "increase in bone and cartilage tissue."
+      }
+    },
+    "about": {
+      "title": "When the efficiency of will be seen?",
+      "desc": "results of trials, carried out on calves",
+      "items": {
+        "first": {
+          "title": "After the injection",
+          "desc": "2 months after the injection, the weight of the experimental group of calves in clinical trials increased by an average of 12.8% compared to the control group."
+        },
+        "second": {
+          "title": "The second weighing",
+          "desc": "4 months after the injection, the weight of the experimental group of calves in clinical trials increased by an average of 22.8% compared to the control group."
+        },
+        "three": {
+          "title": "Final weight",
+          "desc": "By the time of the final weighing (6 months after the injection), the weight of the experimental group of calves increased by 29.6% compared to the control group."
+        }
+      }
     }
   },
   "mioyes": {
