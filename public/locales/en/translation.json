@@ -37,7 +37,10 @@
     }
   },
   "contacts": {
-    "title": "Contact us"
+    "title": "Contact us",
+    "uk_office": "UK office",
+    "ru_office": "Representative office in Russian Federation",
+    "uz_office": "Representative office in Uzbekistan"
   },
   "miosta": {
     "banner": {

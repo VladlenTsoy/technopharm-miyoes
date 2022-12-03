@@ -15,7 +15,7 @@ const ContactUs = () => {
                 <div className={styles.item}>
                     <div className={styles.titleBlock}>
                         <img src={UkImage} className={styles.flag} alt="" />
-                        <div className={styles.title}>UK office</div>
+                        <div className={styles.title}>{t("contacts.uk_office")}</div>
                     </div>
                     <p>64a Cumberland Street, Edinburgh, Scotland, EH3 6RE</p>
                     <p>Ph.No.: +44 7518 735822</p>
@@ -23,7 +23,7 @@ const ContactUs = () => {
                 <div className={styles.item}>
                     <div className={styles.titleBlock}>
                         <img src={RuImage} className={styles.flag} alt="" />
-                        <div className={styles.title}>Representative office in Russian Federation</div>
+                        <div className={styles.title}>{t("contacts.ru_office")}</div>
                     </div>
                     <p>125367, Gabrichevskii st., 5, office 209, Moscow, Russia</p>
                     <p>Ph.No.: +7 915 443 1111</p>
@@ -31,7 +31,7 @@ const ContactUs = () => {
                 <div className={styles.item}>
                     <div className={styles.titleBlock}>
                         <img src={UzImage} className={styles.flag} alt="" />
-                        <div className={styles.title}>Representative office in Uzbekistan</div>
+                        <div className={styles.title}>{t("contacts.uz_office")}</div>
                     </div>
                     <p>100070, Bogidil st., 2A, Tashkent, Uzbekistan</p>
                     <p>Ph.No.: +998 90 902 20 01</p>
