@@ -75,7 +75,7 @@ const Header = () => {
                              onPointerLeave={() => setLang(false)}
                         >
                             <div className={cn(styles.item, styles.itemLang)}>
-                                {i18n.language}
+                                {i18n.language?.includes("ru") ? "RU" : "EN"}
                                 <span />
                                 <img className={styles.arrow} src={ArrowImage} alt="arrow" /></div>
                             <motion.div
