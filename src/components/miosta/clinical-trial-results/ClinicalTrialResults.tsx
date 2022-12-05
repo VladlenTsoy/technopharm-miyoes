@@ -42,7 +42,7 @@ const ClinicalTrialResults = () => {
                                 visible: {opacity: 1},
                                 hidden: {opacity: 0}
                             }}
-                            src={i18n.language === "ru" ? Bg1ImageRU : Bg1Image} alt=""
+                            src={i18n.language?.includes("ru") ? Bg1ImageRU : Bg1Image} alt=""
                         />
                         <motion.img
                             animate={controls}
@@ -53,7 +53,7 @@ const ClinicalTrialResults = () => {
                                 hidden: {opacity: 0, y: 100}
                             }}
                             className={styles.imageContent}
-                            src={i18n.language === "ru" ? Content1ImageRU : Content1Image} alt=""
+                            src={i18n.language?.includes("ru") ? Content1ImageRU : Content1Image} alt=""
                         />
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const ClinicalTrialResults = () => {
                                 visible: {opacity: 1},
                                 hidden: {opacity: 0}
                             }}
-                            src={i18n.language === "ru" ? Content2ImageRU : Content2Image} alt=""
+                            src={i18n.language?.includes("ru") ? Content2ImageRU : Content2Image} alt=""
                         />
                     </div>
                 </div>
@@ -83,7 +83,7 @@ const ClinicalTrialResults = () => {
                                 visible: {opacity: 1},
                                 hidden: {opacity: 0}
                             }}
-                            src={i18n.language === "ru" ? Content3ImageRU : Content3Image} alt=""
+                            src={i18n.language?.includes("ru") ? Content3ImageRU : Content3Image} alt=""
                         />
                     </div>
                 </div>

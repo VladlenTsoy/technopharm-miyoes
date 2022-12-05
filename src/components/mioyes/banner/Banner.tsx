@@ -31,7 +31,7 @@ const Banner = () => {
                     hidden: {opacity: 0, y: 100}
                 }}
             >
-                <img src={i18n.language === "ru" ? BannerImageRU : BannerImage} alt="" />
+                <img src={i18n.language?.includes("ru") ? BannerImageRU : BannerImage} alt="" />
             </motion.div>
             <div className={styles.container}>
                 <div className={styles.content}>

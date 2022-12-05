@@ -88,5 +88,6 @@ h2 {
 }
 
 .textLogo {
+    display: inline-block;
     position: relative;
 }

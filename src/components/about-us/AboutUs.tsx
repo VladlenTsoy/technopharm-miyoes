@@ -39,7 +39,7 @@ const AboutUs = () => {
                             visible: {opacity: 1, y: 0},
                             hidden: {opacity: 0, y: 100}
                         }}
-                        src={i18n.language === "ru" ? AboutImageRU : AboutImage} alt="" />
+                        src={i18n.language?.includes("ru") ? AboutImageRU : AboutImage} alt="" />
                     <div className={styles.items}>
                         <div className={styles.item}>
                             {t("home.about_item_first")}
