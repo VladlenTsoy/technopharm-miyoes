@@ -1,10 +1,13 @@
 import React, {useEffect} from "react"
 import styles from "./AboutUs.module.css"
+import AboutImageRU from "../../assets/images-ru/about.svg"
 import AboutImage from "../../assets/images/about.svg"
 import {motion, useAnimation} from "framer-motion"
 import {useInView} from "react-intersection-observer"
+import {useTranslation} from "react-i18next"
 
 const AboutUs = () => {
+    const {t, i18n} = useTranslation()
     const [secondRef, secondInView] = useInView()
     const secondControls = useAnimation()
 
@@ -13,7 +16,6 @@ const AboutUs = () => {
             secondControls.start("visible")
         }
     }, [secondControls, secondInView])
-
 
     return (
         <div className={styles.container}>
@@ -27,7 +29,7 @@ const AboutUs = () => {
                             visible: {opacity: 1, y: 0},
                             hidden: {opacity: 0, y: -100}
                         }}
-                    >About<br />Technopharm Investment
+                    >{t("home.about")}
                     </motion.h1>
                     <motion.img
                         animate={secondControls}
@@ -37,23 +39,19 @@ const AboutUs = () => {
                             visible: {opacity: 1, y: 0},
                             hidden: {opacity: 0, y: 100}
                         }}
-                        src={AboutImage} alt="" />
+                        src={i18n.language === "ru" ? AboutImageRU : AboutImage} alt="" />
                     <div className={styles.items}>
                         <div className={styles.item}>
-                            Company was established
-                            in 2018 in Scotland
+                            {t("home.about_item_first")}
                         </div>
                         <div className={styles.item}>
-                            The sales office was opened
-                            in Moscow in 2018
+                            {t("home.about_item_second")}
                         </div>
                         <div className={styles.item}>
-                            The representative office was
-                            opened in Tashkent in 2018
+                            {t("home.about_item_three")}
                         </div>
                         <div className={styles.item}>
-                            The penetration to South East
-                            Asian market in 2021
+                            {t("home.about_item_fourth")}
                         </div>
                     </div>
                 </div>

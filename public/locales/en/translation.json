@@ -1,3 +1,126 @@
 {
-  "title": "Welcome to react using react-i18next"
+  "header": {
+    "home": "Home",
+    "about_us": "About us",
+    "products": "Products",
+    "contacts": "Contacts"
+  },
+  "home": {
+    "about": "About\nTechnopharm Investment",
+    "about_item_first": "Company was established\n in 2018 in Scotland",
+    "about_item_second": "The sales office was opened\n in Moscow in 2018",
+    "about_item_three": "The representative office was\n opened in Tashkent in 2018",
+    "about_item_fourth": "The penetration to South East\n Asian market in 2021",
+    "activities_title": "Technopharm Investments\n activities",
+    "activities_item_first": "The company continually develops new drug formulations for both human and veterinary medicine;",
+    "activities_item_second": "The company invented a revolutionary drug formula for treatment of animal distrophia;",
+    "activities_item_three": "The company supplies human medical drugs across Central Asia and CIS;",
+    "activities_item_fourth": "The company established trustful relationships with distributors across Central Asia and CIS since 2018",
+    "core_values": {
+      "title": "Technopharm Investments\n core values",
+      "items": {
+        "first": {
+          "title": "HONESTY AND INTEGRITY",
+          "desc": "Each employee maintains the highest ethical standards and acts to protect and uphold the regulations and procedures required to produce quality drug products."
+        },
+        "second": {
+          "title": "QUALITY AND SAFETY",
+          "desc": "The company is committed to producing safe and effective products, along with providing reliable information and service to our partners. We also have a strict guideline to all our stakeholders to be sure that CSR is maintained in accordance with the corporate culture."
+        },
+        "three": {
+          "title": "INNOVATION\n AND CONTINUOUS IMPROVEMENT",
+          "desc": "Each employee has a “can do” attitude that manifests itself by creatively turning problems into solutions. This attitude is present at all levels in our company and is applied to all aspects of our operations. Each employee promotes and supports continuous efforts that lead to improvements in our processes, products, services and workplace."
+        }
+      }
+    },
+    "strategies": {
+      "title": "The main strategies\n of the company for this year",
+      "items": {
+        "first": "Introduction of our products to new markets.",
+        "second": "Expansion of a number of distributors on the global market.",
+        "three": "Enhancement of the company's footprint worldwide."
+      }
+    }
+  },
+  "contacts": {
+    "title": "Contact us",
+    "uk_office": "UK office",
+    "ru_office": "Representative office in Russian Federation",
+    "uz_office": "Representative office in Uzbekistan"
+  },
+  "miosta": {
+    "banner": {
+      "desc": "it is a new receptor drug for the treatment\n of alimentary dystrophy and protein-energy\n malnutrition (PEM)"
+    },
+    "arguments": {
+      "title": "Сhallenges faced\n by livestock\n breeders:",
+      "items": {
+        "first": "violation of absorption and assimilation of the protein component of feed by the animal's body,",
+        "second": "chronic digestive disorders of animals",
+        "three": "leading to alimentary dystrophy of cattle."
+      }
+    },
+    "how_work": {
+      "desc": "The main component on Miosta Н  is a recombinant protein.\n The application of this product into animals causes the formulation of compounds that able to block the signal way of myostatine (the key negative regulator of muscle growth factor), and, respectively, enhances the  synthesis of protein and inhibits its decay."
+    },
+    "benefits": {
+      "desc": "A drug for the treatment of alimentary dystrophy\n and protein-energy malnutrition (PEM).",
+      "items": {
+        "first": "Normalization of protein metabolism;",
+        "second": "Positive changes in the clinical status of calves (improved appetite, coat (smooth and shiny), motor activity);",
+        "three": "Increasing the daily weight gain of animals and daily milking capacity;",
+        "fourth": "Additional benefits for the farmer up to 15%."
+      }
+    },
+    "application": {
+      "title": {
+        "first": "Application of",
+        "second": "allows"
+      },
+      "items": {
+        "1": "increase the muscle mass of the animal;",
+        "2": "increase the milking capacity and milk fatness;",
+        "3": "increasing the assimilation of the protein component of feed by the animal body;",
+        "4": "improve the appetite of animals;",
+        "5": "improving the general physical condition of the animal;",
+        "6": "acceleration of hoof regeneration;",
+        "7": "shortening the service period of cows;",
+        "8": "improving fertility in cows;",
+        "9": "increasing in the tissues of the genital glands;",
+        "10": "increase in bone and cartilage tissue."
+      }
+    },
+    "about": {
+      "title": "When the efficiency of will be seen?",
+      "desc": "results of trials, carried out on calves",
+      "items": {
+        "first": {
+          "title": "After the injection",
+          "desc": "2 months after the injection, the weight of the experimental group of calves in clinical trials increased by an average of 12.8% compared to the control group."
+        },
+        "second": {
+          "title": "The second weighing",
+          "desc": "4 months after the injection, the weight of the experimental group of calves in clinical trials increased by an average of 22.8% compared to the control group."
+        },
+        "three": {
+          "title": "Final weight",
+          "desc": "By the time of the final weighing (6 months after the injection), the weight of the experimental group of calves increased by 29.6% compared to the control group."
+        }
+      }
+    },
+    "clinical": {
+      "title": "Trials results",
+      "desc": {
+        "first": "Increase in weight gain of calves in trials, kg",
+        "second": "Increase in daily weight gain of calves in clinical trials, kg",
+        "three": "Increase in the average daily milk yield of dairy cows, in l"
+      }
+    }
+  },
+  "mioyes": {
+    "banner": {
+      "title": "What is",
+      "desc": "And why this drug is necessary\n in animal husbandry?"
+    }
+  }
 }

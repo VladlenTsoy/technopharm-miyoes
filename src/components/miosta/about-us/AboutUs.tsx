@@ -2,6 +2,7 @@ import React, {useEffect} from "react"
 import styles from "./AboutUs.module.css"
 import {motion, useAnimation} from "framer-motion"
 import {useInView} from "react-intersection-observer"
+import {useTranslation} from "react-i18next"
 
 const container = {
     visible: {
@@ -20,6 +21,7 @@ const item = {
 }
 
 const AboutUs = () => {
+    const {t} = useTranslation()
     const [ref, inView] = useInView()
     const controls = useAnimation()
 
@@ -32,8 +34,8 @@ const AboutUs = () => {
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
-                <h1>When the efficiency of will be seen?</h1>
-                <div className={styles.subTitle}>results of clinical trials, carried out on calves</div>
+                <h1>{t("miosta.about.title")}</h1>
+                <div className={styles.subTitle}>{t("miosta.about.desc")}</div>
                 <motion.div
                     ref={ref}
                     animate={controls}
@@ -43,13 +45,8 @@ const AboutUs = () => {
                 >
                     <motion.div variants={item} className={styles.block}>
                         <motion.span className={styles.before} />
-                        <h3>After the injection</h3>
-                        <p>
-                            2 months after the injection,
-                            the weight of the experimental group of calves
-                            in clinical trials increased by an average
-                            of 12.8% compared to the control group.
-                        </p>
+                        <h3>{t("miosta.about.items.first.title")}</h3>
+                        <p>{t("miosta.about.items.first.desc")} </p>
                         <motion.span
                             className={styles.after}
                             initial="hidden"
@@ -63,13 +60,8 @@ const AboutUs = () => {
                     </motion.div>
                     <motion.div variants={item} className={styles.block}>
                         <motion.span className={styles.before} />
-                        <h3>The second weighing</h3>
-                        <p>
-                            4 months after the injection,
-                            the weight of the experimental group of calves
-                            in clinical trials increased by an average
-                            of 22.8% compared to the control group.
-                        </p>
+                        <h3>{t("miosta.about.items.second.title")}</h3>
+                        <p>{t("miosta.about.items.second.desc")} </p>
                         <motion.span
                             className={styles.after}
                             initial="hidden"
@@ -83,14 +75,8 @@ const AboutUs = () => {
                     </motion.div>
                     <motion.div variants={item} className={styles.block}>
                         <motion.span className={styles.before} />
-                        <h3>Final weight</h3>
-                        <p>
-                            By the time of the final weighing
-                            (6 months after the injection),
-                            the weight of the experimental group
-                            of calves increased by 29.6% compared
-                            to the control group.
-                        </p>
+                        <h3>{t("miosta.about.items.three.title")}</h3>
+                        <p>{t("miosta.about.items.three.desc")} </p>
                     </motion.div>
                 </motion.div>
             </div>
