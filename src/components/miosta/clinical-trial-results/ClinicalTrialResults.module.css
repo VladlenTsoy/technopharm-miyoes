@@ -13,7 +13,7 @@
     margin: 0 auto 3rem;
 }
 
-.container .wrapper .content:first-child {
+.container .wrapper .content:not(:last-child) {
     margin-bottom: 6rem;
 }
 

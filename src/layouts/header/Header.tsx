@@ -5,23 +5,26 @@ import ReactDOM from "react-dom"
 import {Link} from "react-router-dom"
 import {AnimatePresence, motion} from "framer-motion"
 import {useTranslation} from "react-i18next"
+import ArrowImage from "../../assets/images/arrow.svg"
+import cn from "classnames"
 
 const Header = () => {
-    const {t} = useTranslation()
+    const {t, i18n} = useTranslation()
     const [dropdown, setDropdown] = useState(false)
+    const [lang, setLang] = useState(false)
     const [visible, setVisible] = useState(false)
 
-    const onCloseHandler = () => {
-        setVisible(false)
-    }
+    const onCloseHandler = () => setVisible(false)
+    const onClickHandler = () => setVisible(true)
 
-    const onClickHandler = () => {
-        setVisible(true)
-    }
 
     const onScrollHandler = (id: string) => {
         const element = document.getElementById(id)
         element && element.scrollIntoView({block: "start", behavior: "smooth"})
+    }
+
+    const changeLanguageHandler = (lang: string) => {
+        i18n.changeLanguage(lang).then()
     }
 
     return (
@@ -66,6 +69,34 @@ const Header = () => {
                         <div className={styles.item} onClick={() => onScrollHandler("contacts")}>
                             {t("header.contacts")}
                         </div>
+
+                        <div className={styles.dropdownWrapper}
+                             onPointerEnter={() => setLang(true)}
+                             onPointerLeave={() => setLang(false)}
+                        >
+                            <div className={cn(styles.item, styles.itemLang)}>
+                                {i18n.language}
+                                <span />
+                                <img className={styles.arrow} src={ArrowImage} alt="arrow" /></div>
+                            <motion.div
+                                initial={{opacity: 0, y: 100, display: "none"}}
+                                animate={lang ?
+                                    {opacity: 1, y: 0, display: "block"} : {
+                                        opacity: 0,
+                                        y: 100,
+                                        display: "none"
+                                    }}
+                                className={styles.dropdown}
+                                style={{right: 0}}
+                            >
+                                <div className={styles.dropdownItem} onClick={() => changeLanguageHandler("en")}>
+                                    EN
+                                </div>
+                                <div className={styles.dropdownItem} onClick={() => changeLanguageHandler("ru")}>
+                                    RU
+                                </div>
+                            </motion.div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,11 +109,15 @@ interface DrawerProps {
 }
 
 const Drawer: React.FC<DrawerProps> = ({onCloseHandler}) => {
-    const {t} = useTranslation()
+    const {t, i18n} = useTranslation()
 
     const onScrollHandler = (id: string) => {
         const element = document.getElementById(id)
         element && element.scrollIntoView({block: "start", behavior: "smooth"})
+    }
+
+    const changeLanguageHandler = (lang: string) => {
+        i18n.changeLanguage(lang).then()
     }
 
     return ReactDOM.createPortal(
@@ -98,6 +133,10 @@ const Drawer: React.FC<DrawerProps> = ({onCloseHandler}) => {
                     <Link to="miosta" className={styles.subItem}>Miosta Н</Link>
                     <div className={styles.item}
                          onClick={() => onScrollHandler("contacts")}>{t("header.contacts")}</div>
+                    <div className={styles.langs}>
+                        <div className={styles.lang} onClick={() => changeLanguageHandler("en")}>EN</div>
+                        <div className={styles.lang} onClick={() => changeLanguageHandler("ru")}>RU</div>
+                    </div>
                 </div>
             </>
         </motion.div>, document.body

@@ -1,5 +1,6 @@
 import React, {useEffect} from "react"
 import BannerImage from "../../../assets/images/box_1.png"
+import BannerImageRU from "../../../assets/images-ru/mioyes/box_1.png"
 import styles from "./Banner.module.css"
 import {motion, useAnimation} from "framer-motion"
 import {useInView} from "react-intersection-observer"
@@ -7,7 +8,7 @@ import TitleColorAnimation from "../../title/TitleColorAnimation"
 import {useTranslation} from "react-i18next"
 
 const Banner = () => {
-    const {t} = useTranslation()
+    const {t, i18n} = useTranslation()
     const [ref, inView] = useInView()
     const controls = useAnimation()
 
@@ -30,7 +31,7 @@ const Banner = () => {
                     hidden: {opacity: 0, y: 100}
                 }}
             >
-                <img src={BannerImage} alt="" />
+                <img src={i18n.language === "ru" ? BannerImageRU : BannerImage} alt="" />
             </motion.div>
             <div className={styles.container}>
                 <div className={styles.content}>

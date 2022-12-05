@@ -112,7 +112,8 @@
       "title": "Trials results",
       "desc": {
         "first": "Increase in weight gain of calves in trials, kg",
-        "second": "Increase in daily weight gain of calves in clinical trials, kg"
+        "second": "Increase in daily weight gain of calves in clinical trials, kg",
+        "three": "Increase in the average daily milk yield of dairy cows, in l"
       }
     }
   },

@@ -41,6 +41,23 @@
     color: var(--primary-color);
 }
 
+.header .menu .itemLang {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.header .menu .itemLang span {
+    width: 1px;
+    height: 20px;
+    display: inline-block;
+    background: var(--text-color);
+}
+
+.header .menu .item.itemLang .arrow {
+    width: 14px;
+}
+
 .header .menu .dropdownWrapper {
     position: relative;
 }
@@ -155,4 +172,11 @@
         padding: .5rem 2rem .5rem;
     }
 
+    .langs {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        font-size: var(--font-size-sub-title);
+    }
 }
