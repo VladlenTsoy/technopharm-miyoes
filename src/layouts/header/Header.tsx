@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import LogoImage from "../../assets/images/logo.svg"
 import styles from "./Header.module.css"
 import ReactDOM from "react-dom"
-import {Link} from "react-router-dom"
+import {Link, useHistory} from "react-router-dom"
 import {AnimatePresence, motion} from "framer-motion"
 import {useTranslation} from "react-i18next"
 import ArrowImage from "../../assets/images/arrow.svg"
@@ -13,14 +13,21 @@ const Header = () => {
     const [dropdown, setDropdown] = useState(false)
     const [lang, setLang] = useState(false)
     const [visible, setVisible] = useState(false)
+    const history = useHistory()
 
     const onCloseHandler = () => setVisible(false)
     const onClickHandler = () => setVisible(true)
 
 
-    const onScrollHandler = (id: string) => {
+    const onScrollHandler = async (id: string) => {
         const element = document.getElementById(id)
-        element && element.scrollIntoView({block: "start", behavior: "smooth"})
+        if (element) {
+            element.scrollIntoView({block: "start", behavior: "smooth"})
+        } else {
+            await history.push("/")
+            const elementS = document.getElementById(id)
+            elementS && elementS.scrollIntoView({block: "start", behavior: "smooth"})
+        }
     }
 
     const changeLanguageHandler = (lang: string) => {
@@ -110,10 +117,17 @@ interface DrawerProps {
 
 const Drawer: React.FC<DrawerProps> = ({onCloseHandler}) => {
     const {t, i18n} = useTranslation()
+    const history = useHistory()
 
-    const onScrollHandler = (id: string) => {
+    const onScrollHandler = async (id: string) => {
         const element = document.getElementById(id)
-        element && element.scrollIntoView({block: "start", behavior: "smooth"})
+        if (element) {
+            element.scrollIntoView({block: "start", behavior: "smooth"})
+        } else {
+            await history.push("/")
+            const elementS = document.getElementById(id)
+            elementS && elementS.scrollIntoView({block: "start", behavior: "smooth"})
+        }
     }
 
     const changeLanguageHandler = (lang: string) => {
