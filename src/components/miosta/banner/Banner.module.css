@@ -60,7 +60,7 @@
     }
 
     .banner .bg img {
-        transform: translate(27.5%, -5%) scale(1)
+        transform: translate(24.5%, -5%) scale(1)
     }
 
     .banner .container .content div {
@@ -75,7 +75,7 @@
     }
 
     .banner .bg img {
-        transform: translate(22.5%, 7%) scale(1.5);
+        transform: translate(19.5%, 7%) scale(1.2);
     }
 
     .banner .container .content h1 {
