@@ -96,15 +96,15 @@
       "items": {
         "first": {
           "title": "After the injection",
-          "desc": "2 months after the injection, the weight of the experimental group of calves in clinical trials increased by an average of 12.8% compared to the control group."
+          "desc": "2 months after the injection, the weight of the experimental group of calves in clinical trials increased by an average of <b>12.8%</b> compared to the control group."
         },
         "second": {
           "title": "The second weighing",
-          "desc": "4 months after the injection, the weight of the experimental group of calves in clinical trials increased by an average of 22.8% compared to the control group."
+          "desc": "4 months after the injection, the weight of the experimental group of calves in clinical trials increased by an average of <b>22.8%</b> compared to the control group."
         },
         "three": {
           "title": "Final weight",
-          "desc": "By the time of the final weighing (6 months after the injection), the weight of the experimental group of calves increased by 29.6% compared to the control group."
+          "desc": "By the time of the final weighing (6 months after the injection), the weight of the experimental group of calves increased by <b>29.6%</b> compared to the control group."
         }
       }
     },

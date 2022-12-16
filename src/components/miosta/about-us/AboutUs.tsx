@@ -46,7 +46,7 @@ const AboutUs = () => {
                     <motion.div variants={item} className={styles.block}>
                         <motion.span className={styles.before} />
                         <h3>{t("miosta.about.items.first.title")}</h3>
-                        <p>{t("miosta.about.items.first.desc")} </p>
+                        <p dangerouslySetInnerHTML={{__html: t("miosta.about.items.first.desc")}} />
                         <motion.span
                             className={styles.after}
                             initial="hidden"
@@ -61,7 +61,7 @@ const AboutUs = () => {
                     <motion.div variants={item} className={styles.block}>
                         <motion.span className={styles.before} />
                         <h3>{t("miosta.about.items.second.title")}</h3>
-                        <p>{t("miosta.about.items.second.desc")} </p>
+                        <p dangerouslySetInnerHTML={{__html: t("miosta.about.items.second.desc")}} />
                         <motion.span
                             className={styles.after}
                             initial="hidden"
@@ -76,7 +76,7 @@ const AboutUs = () => {
                     <motion.div variants={item} className={styles.block}>
                         <motion.span className={styles.before} />
                         <h3>{t("miosta.about.items.three.title")}</h3>
-                        <p>{t("miosta.about.items.three.desc")} </p>
+                        <p dangerouslySetInnerHTML={{__html: t("miosta.about.items.three.desc")}} />
                     </motion.div>
                 </motion.div>
             </div>
